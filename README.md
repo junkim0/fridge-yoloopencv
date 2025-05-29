@@ -22,6 +22,10 @@ The current version uses a more reliable approach based on person proximity:
 - More reliable as it's based on actual human interaction
 - Eliminates false positives from lighting changes
 
+Example videos demonstrating the current approach:
+- `example_input.mp4`: Sample input video showing people interacting with a fridge
+- `example_output.mp4`: Processed output showing person detection and proximity-based state changes
+
 ### Previous Version: Brightness-Based Detection
 The previous version (available in `old_versions/fridge_monitor_brightness.py`) used a different approach:
 - Monitored brightness changes in the fridge area
@@ -32,6 +36,13 @@ The previous version (available in `old_versions/fridge_monitor_brightness.py`) 
   - Missed detections when lighting change was gradual
   - Inconsistent behavior in different lighting conditions
   - Multiple state toggles during a single open/close action
+
+You can see this approach in action:
+- `example_output_brightness.mp4`: Shows the brightness-based detection with:
+  - Real-time brightness graph
+  - Brightness threshold visualization
+  - State changes based on brightness deltas
+  - Why this approach was ultimately less reliable
 
 ## Requirements
 
@@ -88,4 +99,5 @@ If you want to experiment with the brightness-based detection:
 3. You'll see additional visualizations:
    - Real-time brightness graph
    - Brightness threshold line
-   - Brightness delta values 
+   - Brightness delta values
+   - Compare the results with the current version to understand why we switched approaches 
