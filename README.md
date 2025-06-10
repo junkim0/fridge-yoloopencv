@@ -1,6 +1,7 @@
 # Fridge Monitor
 
 A Python application that uses computer vision to monitor fridge usage by detecting when people interact with the fridge.
+![image](https://github.com/user-attachments/assets/d0f25c23-278b-49ad-a5ba-359317278872)
 
 ## Features
 
